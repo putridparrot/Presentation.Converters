@@ -10,12 +10,12 @@ namespace Presentation.Converters
     {
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            return value is bool && !(bool)value;
+            return !(value is bool && (bool)value);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            return value is bool && !(bool)value;
+            return !(value is bool && (bool)value);
         }
 
         public object Convert(object[] values, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -23,8 +23,7 @@ namespace Presentation.Converters
             if (values == null)
                 return false;
 
-            var booleans = values.Where(_ => _ is Boolean).ToArray();
-            return booleans.All(_ => (bool)_);
+            return !values.Where(_ => _ is Boolean).All(_ => (bool)_);
         }
 
         public object[] ConvertBack(object value, Type[] targetTypes, object parameter, System.Globalization.CultureInfo culture)
