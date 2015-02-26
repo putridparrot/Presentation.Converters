@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AndBooleanConverterTests.cs" />
+    <Compile Include="BooleanToVisibilityConverterTests.cs" />
     <Compile Include="NotBooleanConverterTests.cs" />
     <Compile Include="OrBooleanConverterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
