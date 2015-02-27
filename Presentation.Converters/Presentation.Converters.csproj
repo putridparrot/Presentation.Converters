@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="AndBooleanConverter.cs" />
     <Compile Include="BooleanToVisibilityConverter.cs" />
+    <Compile Include="DebuggingConverter.cs" />
     <Compile Include="NotBooleanConverter.cs" />
     <Compile Include="OrBooleanConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
