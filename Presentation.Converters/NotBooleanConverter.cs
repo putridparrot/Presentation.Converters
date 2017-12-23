@@ -5,6 +5,11 @@ using System.Windows.Markup;
 
 namespace Presentation.Converters
 {
+    /// <summary>
+    /// If used on multiple values acts as a Not(And(values)), so values True, False will be And'd
+    /// to produce False and then Not'd to produce True
+    /// </summary>
+    [ValueConversion(typeof(bool), typeof(bool))]
     public class NotBooleanConverter : MarkupExtension,
         IValueConverter, IMultiValueConverter
     {

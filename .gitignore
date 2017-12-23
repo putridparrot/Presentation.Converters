@@ -189,3 +189,8 @@ _Pvt_Extensions/
 ModelManifest.xml
 /Presentation.Converters/obj
 /Presentation.Converters/bin
+NDependOut/TrendMetrics/NDependTrendData2015.xml
+NDependOut/NDependAnalysisResult_Presentation_Converters_2015Mar08_17h06.ndar
+NDependOut/InfoWarnings.xml
+Presentation.Converters.ndproj
+/.vs

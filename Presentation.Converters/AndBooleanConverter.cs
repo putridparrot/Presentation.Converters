@@ -5,6 +5,10 @@ using System.Windows.Markup;
 
 namespace Presentation.Converters
 {
+    /// <summary>
+    /// Takes multiple values and acts as an And
+    /// </summary>
+    [ValueConversion(typeof(bool), typeof(bool))]
     public class AndBooleanConverter : MarkupExtension, 
         IMultiValueConverter
     {
