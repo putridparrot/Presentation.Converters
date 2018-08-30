@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Windows.Data;
+using System.Windows.Markup;
 
 namespace Presentation.Converters
 {
@@ -11,7 +12,8 @@ namespace Presentation.Converters
     /// to spot those strange issues with a value not being as expected
     /// </summary>
     [ExcludeFromCodeCoverage]
-    public class DebuggingConverter : IValueConverter
+    public class DebuggingConverter : MarkupExtension,
+        IValueConverter
     {
         public object Convert(object value, Type targetType,
                               object parameter, CultureInfo culture)
@@ -29,6 +31,11 @@ namespace Presentation.Converters
             Debugger.Break();
 #endif
             return value;
+        }
+
+        public override object ProvideValue(IServiceProvider serviceProvider)
+        {
+            return this;
         }
     }
 }

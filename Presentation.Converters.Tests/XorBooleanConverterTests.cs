@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
+﻿using System.Diagnostics.CodeAnalysis;
+using NUnit.Framework;
 
 namespace Presentation.Converters.Tests
 {
+    [ExcludeFromCodeCoverage]
+    [TestFixture]
     public class XorBooleanConverterTests
     {
-        [Fact]
+        [Test]
         public void XorBooleanConverter_IfContainNonBoolean_ReturnTrue()
         {
             var converter = new XorBooleanConverter();
@@ -20,7 +18,7 @@ namespace Presentation.Converters.Tests
             Assert.True((bool)result);
         }
 
-        [Fact]
+        [Test]
         public void XorBooleanConverter_IfTrueAndFalseBoolean_ReturnTrue()
         {
             var converter = new XorBooleanConverter();
@@ -31,7 +29,7 @@ namespace Presentation.Converters.Tests
             Assert.True((bool)result);
         }
 
-        [Fact]
+        [Test]
         public void XorBooleanConverter_IfAllFalseBoolean_ReturnFalse()
         {
             var converter = new XorBooleanConverter();
@@ -42,7 +40,7 @@ namespace Presentation.Converters.Tests
             Assert.False((bool)result);
         }
 
-        [Fact]
+        [Test]
         public void XorBooleanConverter_IfAllTrueBoolean_ReturnFalse()
         {
             var converter = new XorBooleanConverter();

@@ -6,6 +6,11 @@ using System.Windows.Markup;
 
 namespace Presentation.Converters
 {
+    /// <summary>
+    /// Converts from boolean to Visibility and back. By default
+    /// true is mapped to Visible and false to Collapsed, but these
+    /// values can be altered via WhenTrue and WhenFalse to suit.
+    /// </summary>
     public class BooleanToVisibilityConverter : MarkupExtension, 
         IValueConverter
     {
@@ -46,7 +51,7 @@ namespace Presentation.Converters
         public object ConvertBack(object value, Type targetType, object parameter,
                                   CultureInfo culture)
         {
-            return (value is Visibility) && (Visibility)value == WhenTrue;
+            return value is Visibility visibility && visibility == WhenTrue;
         }
     }
 }

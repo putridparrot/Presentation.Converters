@@ -17,7 +17,7 @@ namespace Presentation.Converters
             if (values == null)
                 return false;
 
-            var booleans = values.Where(_ => _ is Boolean).ToArray();
+            var booleans = values.Where(_ => _ is bool).ToArray();
             return booleans.Any(_ => (bool)_);
         }
 

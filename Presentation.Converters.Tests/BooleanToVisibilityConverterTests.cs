@@ -1,34 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Windows;
-using Xunit;
+using NUnit.Framework;
 
 namespace Presentation.Converters.Tests
 {
+    [ExcludeFromCodeCoverage]
+    [TestFixture]
     public class BooleanToVisibilityConverterTests
     {
-        [Fact]
+        [Test]
         public void BooleanToVisibilityConverter_EnsureDefaultForTrueIsVisible()
         {
             var converter = new BooleanToVisibilityConverter();
 
             Visibility visibility = (Visibility)converter.Convert(true, null, null, null);
-            Assert.Equal(Visibility.Visible, visibility);
+            Assert.AreEqual(Visibility.Visible, visibility);
         }
 
-        [Fact]
+        [Test]
         public void BooleanToVisibilityConverter_EnsureDefaultForFalseIsCollapsed()
         {
             var converter = new BooleanToVisibilityConverter();
 
             Visibility visibility = (Visibility)converter.Convert(false, null, null, null);
-            Assert.Equal(Visibility.Collapsed, visibility);
+            Assert.AreEqual(Visibility.Collapsed, visibility);
         }
 
-        [Fact]
+        [Test]
         public void BooleanToVisibilityConverter_WhenTrueIsNotVisible_EnsureTrueReturnsWhenTrueValue()
         {
             var converter = new BooleanToVisibilityConverter
@@ -38,10 +36,10 @@ namespace Presentation.Converters.Tests
             };
 
             Visibility visibility = (Visibility)converter.Convert(true, null, null, null);
-            Assert.Equal(Visibility.Hidden, visibility);
+            Assert.AreEqual(Visibility.Hidden, visibility);
         }
 
-        [Fact]
+        [Test]
         public void BooleanToVisibilityConverter_WhenFalseIsNotCollapsed_EnsureFalseReturnsWhenFalseValue()
         {
             var converter = new BooleanToVisibilityConverter
@@ -51,7 +49,7 @@ namespace Presentation.Converters.Tests
             };
 
             Visibility visibility = (Visibility)converter.Convert(false, null, null, null);
-            Assert.Equal(Visibility.Hidden, visibility);
+            Assert.AreEqual(Visibility.Hidden, visibility);
         }
     }
 }

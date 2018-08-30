@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
+﻿using System.Diagnostics.CodeAnalysis;
+using NUnit.Framework;
 
 namespace Presentation.Converters.Tests
 {
+    [ExcludeFromCodeCoverage]
+    [TestFixture]
     public class NotBooleanConverterTests
     {
-        [Fact]
+        [Test]
         public void NotBooleanConverter_IfContainsNoBoolean_IgnoreActAsNotAroundAndAnd()
         {
             var converter = new NotBooleanConverter();
@@ -20,7 +18,7 @@ namespace Presentation.Converters.Tests
             Assert.True((bool)result);
         }
 
-        [Fact]
+        [Test]
         public void NotBooleanConverter_IfTrueAndFalseBoolean_ReturnTrue()
         {
             var converter = new NotBooleanConverter();
@@ -31,7 +29,7 @@ namespace Presentation.Converters.Tests
             Assert.True((bool)result);
         }
 
-        [Fact]
+        [Test]
         public void NotBooleanConverter_IfAllFalseBoolean_ReturnTrue()
         {
             var converter = new NotBooleanConverter();
@@ -42,7 +40,7 @@ namespace Presentation.Converters.Tests
             Assert.True((bool)result);
         }
 
-        [Fact]
+        [Test]
         public void NotBooleanConverter_IfAllTrueBoolean_ReturnFalse()
         {
             var converter = new NotBooleanConverter();

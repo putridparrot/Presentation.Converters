@@ -28,7 +28,7 @@ namespace Presentation.Converters
             if (values == null)
                 return false;
 
-            return !values.Where(_ => _ is Boolean).All(_ => (bool)_);
+            return !values.Where(_ => _ is bool).All(_ => (bool)_);
         }
 
         public object[] ConvertBack(object value, Type[] targetTypes, object parameter, System.Globalization.CultureInfo culture)
