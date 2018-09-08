@@ -8,8 +8,8 @@
     <ProjectGuid>{02C40E24-49A3-4429-A9B6-688C6C7C2586}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Presentation.Converters.Tests</RootNamespace>
-    <AssemblyName>Presentation.Converters.Tests</AssemblyName>
+    <RootNamespace>PutridParrot.Presentation.Converters.Tests</RootNamespace>
+    <AssemblyName>PutridParrot.Presentation.Converters.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

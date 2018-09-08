@@ -3,7 +3,7 @@ using System.Linq;
 using System.Windows.Data;
 using System.Windows.Markup;
 
-namespace Presentation.Converters
+namespace PutridParrot.Presentation.Converters
 {
     /// <summary>
     /// If used on multiple values acts as a Not(And(values)), so values True, False will be And'd

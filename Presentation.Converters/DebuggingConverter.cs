@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Markup;
 
-namespace Presentation.Converters
+namespace PutridParrot.Presentation.Converters
 {
     /// <summary>
     /// DebuggingConverter allows us to add debugging to a binding

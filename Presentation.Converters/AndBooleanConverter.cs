@@ -3,7 +3,7 @@ using System.Linq;
 using System.Windows.Data;
 using System.Windows.Markup;
 
-namespace Presentation.Converters
+namespace PutridParrot.Presentation.Converters
 {
     /// <summary>
     /// Takes multiple values and acts as an And

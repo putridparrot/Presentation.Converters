@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Markup;
 
-namespace Presentation.Converters
+namespace PutridParrot.Presentation.Converters
 {
     /// <summary>
     /// Converts from boolean to Visibility and back. By default

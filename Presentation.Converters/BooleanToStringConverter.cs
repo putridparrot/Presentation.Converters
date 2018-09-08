@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Markup;
 
-namespace Presentation.Converters
+namespace PutridParrot.Presentation.Converters
 {
     /// <summary>
     /// Allows conversion of a boolean value to a string and back. By default

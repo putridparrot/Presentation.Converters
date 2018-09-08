@@ -2,7 +2,7 @@
 using System.Windows;
 using NUnit.Framework;
 
-namespace Presentation.Converters.Tests
+namespace PutridParrot.Presentation.Converters.Tests
 {
     [ExcludeFromCodeCoverage]
     [TestFixture]
