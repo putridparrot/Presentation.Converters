@@ -1,8 +1,9 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Windows;
 using NUnit.Framework;
+using PutridParrot.Presentation.Converters;
 
-namespace PutridParrot.Presentation.Converters.Tests
+namespace Tests.PutridParrot.Presentation.Converters
 {
     [ExcludeFromCodeCoverage]
     [TestFixture]

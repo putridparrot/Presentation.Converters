@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.Converters", "Presentation.Converters\Presentation.Converters.csproj", "{3419BE9C-B574-4622-94FE-D33B19BB61AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PutridParrot.Presentation.Converters", "Presentation.Converters\PutridParrot.Presentation.Converters.csproj", "{3419BE9C-B574-4622-94FE-D33B19BB61AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.Converters.Tests", "Presentation.Converters.Tests\Presentation.Converters.Tests.csproj", "{02C40E24-49A3-4429-A9B6-688C6C7C2586}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.PutridParrot.Presentation.Converters", "Presentation.Converters.Tests\Tests.PutridParrot.Presentation.Converters.csproj", "{02C40E24-49A3-4429-A9B6-688C6C7C2586}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
