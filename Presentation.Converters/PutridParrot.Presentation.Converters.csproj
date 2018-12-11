@@ -40,10 +40,13 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AndBooleanConverter.cs" />
+    <Compile Include="BooleanToBrushConverter.cs" />
     <Compile Include="BooleanToStringConverter.cs" />
+    <Compile Include="BooleanToValueConverter.cs" />
     <Compile Include="BooleanToVisibilityConverter.cs" />
     <Compile Include="DebuggingConverter.cs" />
     <Compile Include="NotBooleanConverter.cs" />

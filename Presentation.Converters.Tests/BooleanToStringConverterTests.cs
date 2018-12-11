@@ -1,4 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Windows;
+using System.Windows.Markup;
 using NUnit.Framework;
 using PutridParrot.Presentation.Converters;
 
@@ -40,7 +42,7 @@ namespace Tests.PutridParrot.Presentation.Converters
         public void Convert_NonBooleanToString_ExpectNull()
         {
             var c = new BooleanToStringConverter();
-            Assert.IsNull(c.Convert("NotBoolean", typeof(string), null, null));
+            Assert.AreEqual(DependencyProperty.UnsetValue, c.Convert("NotBoolean", typeof(string), null, null));
         }
 
         [Test]
@@ -61,7 +63,7 @@ namespace Tests.PutridParrot.Presentation.Converters
         public void ConvertBack_NonStringToBoolean_ExpectFalse()
         {
             var c = new BooleanToStringConverter();
-            Assert.IsFalse((bool)c.ConvertBack(true, typeof(bool), null, null));
+            Assert.AreEqual(DependencyProperty.UnsetValue, c.ConvertBack(true, typeof(bool), null, null));
         }
 
         [Test]
