@@ -11,7 +11,7 @@ namespace Tests.PutridParrot.Presentation.Converters
         [Test]
         public void AndBooleanConverter_IfContainNonBoolean_ReturnFalse()
         {
-            var converter = new AndBooleanConverter();
+            var converter = new AndToBooleanConverter();
 
             var values = new object[] { true, false, 3 };
 
@@ -22,7 +22,7 @@ namespace Tests.PutridParrot.Presentation.Converters
         [Test]
         public void AndBooleanConverter_IfTrueAndFalseBoolean_ReturnFalse()
         {
-            var converter = new AndBooleanConverter();
+            var converter = new AndToBooleanConverter();
 
             var values = new object[] { true, false, true };
 
@@ -33,7 +33,7 @@ namespace Tests.PutridParrot.Presentation.Converters
         [Test]
         public void AndBooleanConverter_IfAllFalseBoolean_ReturnFalse()
         {
-            var converter = new AndBooleanConverter();
+            var converter = new AndToBooleanConverter();
 
             var values = new object[] { false, false, false };
 
@@ -44,7 +44,7 @@ namespace Tests.PutridParrot.Presentation.Converters
         [Test]
         public void AndBooleanConverter_IfAllTrueBoolean_ReturnTrue()
         {
-            var converter = new AndBooleanConverter();
+            var converter = new AndToBooleanConverter();
 
             var values = new object[] { true, true, true };
 

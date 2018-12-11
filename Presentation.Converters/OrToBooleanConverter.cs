@@ -1,24 +1,21 @@
-﻿using System;
-using System.Linq;
-using System.Windows.Data;
-using System.Windows.Markup;
+﻿using System.Windows.Data;
 
 namespace PutridParrot.Presentation.Converters
 {
     /// <summary>
-    /// Takes multiple values and acts as an Xor
+    /// Takes multiple values and acts as an Or
     /// </summary>
     [ValueConversion(typeof(bool), typeof(bool))]
-    public class XorBooleanConverter : XorToValueConverter<bool>
+    public class OrToBooleanConverter : OrToValueConverter<bool>
     {
-        public XorBooleanConverter() :
+        public OrToBooleanConverter() :
             this(true, false)
         {
             // should be overriden is subclass to be
             // specific to the supported type
         }
 
-        public XorBooleanConverter(bool whenTrue, bool whenFalse)
+        public OrToBooleanConverter(bool whenTrue, bool whenFalse)
         {
             WhenTrue = whenTrue;
             WhenFalse = whenFalse;

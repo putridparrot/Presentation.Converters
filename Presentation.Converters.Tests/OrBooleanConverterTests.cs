@@ -6,12 +6,12 @@ namespace Tests.PutridParrot.Presentation.Converters
 {
     [ExcludeFromCodeCoverage]
     [TestFixture]
-    public class OrBooleanConverterTests
+    public class OrToBooleanConverterTests
     {
         [Test]
-        public void OrBooleanConverter_IfContainNonBoolean_ReturnTrue()
+        public void OrToBooleanConverter_IfContainNonBoolean_ReturnTrue()
         {
-            var converter = new OrBooleanConverter();
+            var converter = new OrToBooleanConverter();
 
             var values = new object[] { true, false, 3 };
 
@@ -20,9 +20,9 @@ namespace Tests.PutridParrot.Presentation.Converters
         }
 
         [Test]
-        public void OrBooleanConverter_IfTrueAndFalseBoolean_ReturnTrue()
+        public void OrToBooleanConverter_IfTrueAndFalseBoolean_ReturnTrue()
         {
-            var converter = new OrBooleanConverter();
+            var converter = new OrToBooleanConverter();
 
             var values = new object[] { true, false, true };
 
@@ -31,9 +31,9 @@ namespace Tests.PutridParrot.Presentation.Converters
         }
 
         [Test]
-        public void OrBooleanConverter_IfAllFalseBoolean_ReturnFalse()
+        public void OrToBooleanConverter_IfAllFalseBoolean_ReturnFalse()
         {
-            var converter = new OrBooleanConverter();
+            var converter = new OrToBooleanConverter();
 
             var values = new object[] { false, false, false };
 
@@ -42,9 +42,9 @@ namespace Tests.PutridParrot.Presentation.Converters
         }
 
         [Test]
-        public void OrBooleanConverter_IfAllTrueBoolean_ReturnTrue()
+        public void OrToBooleanConverter_IfAllTrueBoolean_ReturnTrue()
         {
-            var converter = new OrBooleanConverter();
+            var converter = new OrToBooleanConverter();
 
             var values = new object[] { true, true, true };
 
